@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb)
+    no-repeat;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 0px 0px 300px #000;
+}
+
+.btn {
+  border-radius: 9px;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px 20px;
+  border: solid #000 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: #fff;
+  border: solid #fff 3px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 2em;
+  text-align: justify;
+  margin: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Media Querias to Adjust to Ipad or Mobiles (iPhone7 ex.) */
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 7px 15px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+}

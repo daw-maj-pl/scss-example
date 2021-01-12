@@ -1,0 +1,20 @@
+@mixin link-style(
+  $link,
+  $visited: darken($link, 10),
+  $hover: lighten($link, 10),
+  $active: $hover
+) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visited;
+    }
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+@include link-style(blue, $hover: lightblue);
